@@ -1,8 +1,1512 @@
 
-<!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"> <head> <title>Mimic ASRS Form</title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <meta http-equiv="Last-Modified" content="Wed, 25 Jan 2023 17:45:50 GMT"/> <meta http-equiv="Cache-Control" content="no-store"/> <meta http-equiv="Pragma" content="no-cache"/>
-<style type="text/css">
-	label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
-.margins{margin-top:10px;margin-bottom:10px}.backdrop{background-image:url(../images/bg_gradientDrk.jpg);background-position:top;background-repeat:repeat-x;background-color:#fff;margin-top:20px}.headerBackdrop{background-image:url(../images/bg_top.jpg);background-position:top;background-repeat:repeat-x;margin-top:20px}.footerBackdrop{background-image:url(../images/bg_footer.jpg);background-position:bottom;background-repeat:repeat-x;margin-top:20px}.tableBorder{border:1px solid #787878}.entryCaveat{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal;color:#333;line-height:16px}.formName{font-size:16px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;text-align:center;color:#333;text-transform:uppercase}.formName.alert{color:#f00 !important;font-size:12px !important;text-transform:none !important;padding:5px 0 5px 0 !important}.titleASRS{font-family:"Arial Narrow",Helvetica,sans-serif;font-weight:bold;color:#0d2d76;text-align:center;text-transform:uppercase;font-size:17px}.titleDirections{font-weight:bold;text-transform:uppercase;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px}.tips{font-family:Arial,Helvetica,sans-serif;font-size:9px;color:#666;text-decoration:none}.tipsheader{font-family:Arial,Helvetica,sans-serif;font-size:9px;text-transform:uppercase;color:#666;text-align:center}.reporttext{font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#000}.tightText{letter-spacing:-1px}.narrative{font-family:"Courier New",Courier,monospace;font-size:12px;color:#000;width:665px;-webkit-text-size-adjust:none}pre{white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap;word-wrap:break-word}.narrativePrint{font-family:"Courier New",Courier,monospace;font-size:12px;color:#000;width:665px}.category{font-family:Arial,Helvetica,sans-serif;font-size:12px;text-transform:uppercase;color:#333;font-weight:bold;text-decoration:none;text-align:center}.categoryRight{font-family:Arial,Helvetica,sans-serif;font-size:12px;text-transform:uppercase;color:#333;font-weight:bold;text-decoration:none;text-align:right}.categoryDivider{border-right-width:1px;border-right-style:solid;border-right-color:#666;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;color:#333;text-align:center}.categoryDividerLeft{border-right-width:1px;border-right-style:solid;border-right-color:#666;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;color:#333;text-align:left}.categoryBox{background-image:url(../images/bg_grey.gif);background-repeat:repeat-x;border:1px solid #999;background-position:bottom;background-color:#d0d0d0}.directionsBox{background-image:url(../images/bg_drkgrey.jpg);background-repeat:repeat-x;border:1px solid #707070;background-position:bottom;background-color:#8e8e8e;text-align:center}.vertical{border-left-width:1px;border-left-style:dotted;border-left-color:#999}.divider{border-right-width:1px;border-right-style:solid;border-right-color:#999}.horizontal{border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#666}.horizontalTOP{border-top-width:1px;border-top-style:dotted;border-top-color:#666}@-moz-document url-prefix(){input#location_latitude_writein{width:6.8em}}@-moz-document url-prefix(){input#location_longitude_writein{width:6.8em}}@-moz-document url-prefix(){input#location_airport_writein{width:8em}}@-moz-document url-prefix(){input#location_navaid_writein{width:8em}}@-moz-document url-prefix(){input#acft1_UAScontrolling_writein{width:9.2em}}@-moz-document url-prefix(){input#acft2_UAScontrolling_writein{width:9.2em}}.button{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#333;text-decoration:none;border:1px solid #666;text-align:center;background-image:url(../images/bg_white.gif);background-repeat:repeat-x;display:block;vertical-align:middle;padding-right:-10px;-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.button:hover{color:#000;border:1px solid #000;background-image:url(../images/bg_whiteHover.gif);background-repeat:repeat-x}.button:link{color:#333;text-decoration:none}.buttonlabel{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#000;line-height:20px}#backButton{visibility:hidden}#submitButton{visibility:hidden}.buttonGrey,.buttonGrey:visited{color:#fff;font-size:14px;width:95%;float:right;text-decoration:none;list-style-type:none;padding:8px 10px 8px;background-color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border:solid 1px #333;-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.1);-moz-box-shadow:0 3px 3px rgba(0,0,0,0.1);box-shadow:0 3px 3px rgba(0,0,0,0.1);-webkit-appearance:none;-moz-appearance:none;appearance:none}.buttonGrey:hover,.buttonGrey:active{background-color:rgba(0,0,0,0.06);border:solid 2px #333;color:#333;font-weight:bold;-webkit-appearance:none;-moz-appearance:none;appearance:none}.body-styling{font-family:Arial,Helvetica,sans-serif;background-image:url(../images/bg_gradient.jpg);background-repeat:repeat-x;background-position:top;background-color:#fff;margin-top:35px;color:#2e271d;font-size:13px;line-height:21px}.bounding-frame{background-color:#fff;display:block;text-align:left;width:665px;vertical-align:top;padding:10px 20px 20px 20px;border:1px solid #ccc;margin:auto}.header-image{display:block;margin-bottom:10px}.content-frame{background-color:#f0f0f0;display:block;text-align:left;vertical-align:top;padding:20px;margin:auto}.thankyou{color:#233f57;font-weight:bold;font-size:13px;margin-top:29px}.contribution{color:#0d2d76;font-size:17px;font-style:italic;text-align:right;margin-top:10px;display:block;float:left;width:75%}.logo{display:block;float:right;width:23%}.logo img{float:right}.body-styling ul li{margin-bottom:10px}.code-block{text-align:center;display:block;margin-bottom:20px}.msg-block{background-color:#fff;display:block;text-align:center;color:#2e271d;width:85%;padding:15px;border:1px solid #ded8c1;line-height:20px;margin-top:20px;margin-bottom:20px;margin-right:auto;margin-left:auto}.row{display:block;width:100%;height:43px;padding-top:10px;margin-top:10px}.closeTip{font-size:12px;color:#666;display:block;float:left;width:75%}.print{display:block;float:right;width:23%}.back{display:block;float:left;width:28%;margin-left:-8px}.continue{display:block;float:right;width:28%}@-ms-viewport{width:device-width;initial-scale:1.0}@media screen and (max-device-width:850px){body{-webkit-text-size-adjust:100%}}@media(max-width:685px){html,body{overflow-x:hidden}body{margin:0}.body-styling{margin-top:0;background-color:#fff;background-image:none;font-size:15px;line-height:22px}.bounding-frame{width:100% !important;padding:0;margin:auto;border:0;margin-bottom:50px !important}.header-image{margin-top:10px}.row{margin-right:20px;margin-left:20px;padding-bottom:20px}.logo img{float:left !important}.back{width:43%;margin-right:30px}.continue{width:43%;float:left !important}.closeTip{width:65%;margin-right:20px;font-size:13px}.print{float:left !important}}@media(max-width:550px){.contribution{text-align:left;width:72%;margin-right:10px;margin-top:0 !important}.logo{width:18%;margin-right:10px}@media(max-width:410px){.row{padding-bottom:35px}.contribution{width:62%;margin-right:10px}.logo{width:28%;margin-right:10px}.back{width:100%;margin-bottom:15px;margin-right:auto !important;margin-left:auto !important}.continue{width:100%;float:none !important;margin-bottom:15px}.closeTip{width:90% !important;margin-bottom:15px}.print{float:none !important;width:100%;margin-bottom:15px}.buttonGrey{float:left !important;width:90%;margin-right:0;margin-left:0}}
-</style> 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+    <title>Mimic ASRS Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Last-Modified" content="Wed, 25 Jan 2023 17:45:50 GMT" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <style type="text/css">
+        label.error {
+            float: none;
+            color: red;
+            padding-left: .5em;
+            vertical-align: top;
+        }
 
- </head> <body class="margins"> <form id="ERS_B_form" name="ERS_B_form" method="POST" action="submit_process.php" autocomplete="off"> <input type="hidden" id="form_type" name="form_type" value="ERS_B"/> <input type="hidden" id="form_version" name="form_version" value="1.0"/> <div class="formName">MIMIC FORM</div> <table width="707" border="0" align="center" cellpadding="4" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#E0E9F4" role="presentation"> <tr> <td width="699" height="300"><table width="675" height="321" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="45" colspan="5" align="center" class="tips"><em class="tipsheader"><br/> <br/> </em></td> </tr> <tr> <td width="435" height="45" colspan="4" class="tips">IDENTIFICATION STRIP: <em>Please fill in all blanks to ensure return of strip.<br/> </em></td> <td width="240" rowspan="2" valign="bottom"></td> </tr> <tr>  </tr> <tr> <td valign="middle"><table width="194" height="100" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">  <tr> <td height="50" class="reporttext"><label for="type_event_situation">TYPE OF EVENT/SITUATION <br/> <textarea name="type_event_situation" cols="25" rows="2" id="type_event_situation" tabindex="11" maxlength="75"></textarea></label></td> </tr> <tr valign="bottom"> <td height="45" class="reporttext"><label for="date_occurrence">DATE OF OCCURRENCE<span class="tips"> (MM/DD/YYYY) </span><br/> <input name="date_occurrence" type="text" id="date_occurrence" tabindex="12" size="15" maxlength="10"/></label></td> </tr> <tr> <td height="50" class="reporttext"><label for="local_time">LOCAL TIME <span class="tips">(24 HR. CLOCK) [HH:MM]</span> <br/> <input name="local_time" type="text" id="local_time" tabindex="13" size="15" maxlength="5"/></label></td> </tr> </table></td> </tr> </table> <table width="675" height="23" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="23" colspan="3" class="tipsheader">please fill in appropriate spaces and check all items which apply to this event or situation. </td> </tr> </table></td> </tr> <tr> <td align="center" class="categoryBox"><table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="182" class="categoryRight">REPORTER&nbsp;&nbsp;</td>  <td width="344" class="category">FLYING TIME (in hours) </td> </tr> </table></td> </tr> <tr> <td valign="top" class="buttonlabel"><table width="697" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="353" height="138" valign="top" class="divider"><table width="345" height="140" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="117" height="22" align="left" valign="top" class="horizontal"> <label for="rptr_captain_rb"><input name="rptr_CapFirst" type="radio" id="rptr_captain_rb" tabindex="14" value="Captain"/> Captain </label><br/> <label for="rptr_firstofficer_rb"><input name="rptr_CapFirst" type="radio" id="rptr_firstofficer_rb" tabindex="15" value="First Officer"/> First Officer </label></td> <td width="6" rowspan="3" align="left" class="vertical">&nbsp;</td> <td width="222" rowspan="3" align="left" valign="top"> <label for="rptr_singlepilot_rb"><input name="rptr_SITDO" type="radio" id="rptr_singlepilot_rb" tabindex="20" value="Single Pilot"/> Single Pilot </label><br/> <label for="rptr_instructor_rb"><input name="rptr_SITDO" type="radio" id="rptr_instructor_rb" tabindex="21" value="Instructor"/> Instructor</label><br/> <label for="rptr_dispatcher_rb"> <input name="rptr_SITDO" type="radio" id="rptr_dispatcher_rb" tabindex="23" value="Dispatcher"/> Dispatcher: &nbsp;</label> <label for="rptr_dispatcher_writein"> <input name="rptr_dispatcher_writein" type="text" id="rptr_dispatcher_writein" tabindex="24" size="8" maxlength="5"/> <span class="tips">yrs</span></label><br/> <label for="rptr_other_rb"><input name="rptr_SITDO" type="radio" id="rptr_other_rb" tabindex="25" value="Other"/> <label for="rptr_other_writein"> Other:</label>&nbsp; <input name="rptr_other_writein" type="text" id="rptr_other_writein" tabindex="26" size="17" maxlength="25"/></label></td> </tr> <tr> <td align="left" class="horizontal"> <label for="rptr_pilotflying_rb"><input name="rptr_PFPNF" type="radio" id="rptr_pilotflying_rb" tabindex="16" value="Pilot Flying"/> Pilot Flying </label> <br/> <label for="rptr_pilotnotflying_rb"><input name="rptr_PFPNF" type="radio" id="rptr_pilotnotflying_rb" tabindex="17" value="Pilot Not Flying"/> Pilot Not Flying</label></td> </tr> <tr> <td height="46" align="left"> <label for="rptr_reliefpilot_rb"><input name="rptr_ReliefCheck" type="radio" id="rptr_reliefpilot_rb" tabindex="18" value="Relief Pilot"/> Relief Pilot</label><br/> <label for="rptr_checkairman_rb"><input name="rptr_ReliefCheck" type="radio" id="rptr_checkairman_rb" tabindex="19" value="Check Airman"/> Check Airman</label> </td> </tr> </table></td> <td width="344" valign="top"><table width="265" height="137" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="85" height="46"> <label for="flyingtime_totaltime_writein"> <div align="right" valign="middle">Total Time: &nbsp;</div> </label></td> <td width="180" height="46" valign="middle"><input name="flyingtime_totaltime_writein" type="text" id="flyingtime_totaltime_writein" tabindex="27" size="10" maxlength="9"/> <span class="tips">hrs</span></td> </tr> <tr> <td height="45"><label for="flyingtime_last90days_writein"> <div align="right" valign="middle">Last 90 Days: &nbsp;</div> </label></td> <td height="45" valign="middle"><input name="flyingtime_last90days_writein" type="text" id="flyingtime_last90days_writein" tabindex="28" size="10" maxlength="6"/> <span class="tips">hrs</span></td> </tr> <tr> <td height="46"><label for="flyingtime_timeintype_writein"> <div align="right" valign="middle">Time in Type:&nbsp;&nbsp;</div> </label></td> <td height="46" valign="middle"><input name="flyingtime_timeintype_writein" type="text" id="flyingtime_timeintype_writein" tabindex="28" size="10" maxlength="9"/> <span class="tips">hrs</span></td> </tr> </table></td> </tr> </table> </td> </tr> <tr> <td align="center" class="categoryBox"><table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="353" class="categoryDivider">Certificates &amp; ratings </td> <td width="202" class="categoryRight">ATC Experience&nbsp;&nbsp;</td> </tr> </table></td> </tr> <tr> <td valign="top" class="buttonlabel"><table width="697" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="353" height="113" valign="top" class="divider"><table width="340" height="112" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="41" colspan="2" class="horizontal"><label for="certratings_ddlb"> <select name="certratings_ddlb" id="certratings_ddlb" tabindex="29"> <option>( Select Certificate )</option> <option>Student</option> <option>Sport/Recreational</option> <option>Private</option> <option>Commercial</option> <option>ATP</option> </select> </label> </td> </tr> <tr> <td width="175" height="46"><label for="certratings_fltinstructor_cbx"><input name="certratings_fltinstructor_cbx" type="checkbox" id="certratings_fltinstructor_cbx" tabindex="30" value="Y"/> Flight Instructor</label><br/> <label for="certratings_multiengine_cbx"><input type="checkbox" id="certratings_multiengine_cbx" name="certratings_multiengine_cbx" tabindex="31" value="Y"/> Multiengine</label></td> <td width="165"><label for="certratings_instrument_cbx"><input type="checkbox" id="certratings_instrument_cbx" name="certratings_instrument_cbx" tabindex="32" value="Y"/> Instrument</label><br/> <label for="certratings_fltengineer_cbx"><input type="checkbox" id="certratings_fltengineer_cbx" name="certratings_fltengineer_cbx" tabindex="33" value="Y"/>Flight Engineer </label></td> </tr> <tr> <td height="25" colspan="2" valign="top"><label for="certratings_other_cbx"><input type="checkbox" id="certratings_other_cbx" name="certratings_other_cbx" tabindex="34" value="Y"/> Other:&nbsp; </label> <input name="certratings_other_writein" type="text" id="certratings_other_writein" title="Certificates & Ratings - Other" tabindex="35" size="20" maxlength="25"/> </td></tr> </table></td> <td width="344" valign="top"><table width="334" height="109" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="41" class="horizontal"><label for="atcexp_fpl_rb"> <input name="atcexp_rb" type="radio" id="atcexp_fpl_rb" tabindex="36" value="FPL"/> FPL </label></td> <td height="41" class="horizontal" colspan="3"><label for="atcexp_developmental_rb"><input name="atcexp_rb" type="radio" id="atcexp_developmental_rb" tabindex="37" value="Developmental"/> Developmental</label></td> </tr> <tr> <td width="78" height="34"><div align="right">Radar&nbsp;&nbsp;&nbsp;</div></td> <td width="89" height="34"><input name="atcexp_radar_writein" id="atcexp_radar_writein" type="text" title="Radar" tabindex="38" size="5" maxlength="5"/> <span class="tips">yrs</span></td> <td width="80" height="34"><div align="right">Supervisory&nbsp;&nbsp;&nbsp;</div></td> <td width="87" height="34"><input name="atcexp_supervisory_writein" id="atcexp_supervisory_writein" type="text" title="Supervisor" tabindex="40" size="5" maxlength="5"/> <span class="tips">yrs</span></td> </tr> <tr> <td height="34"><div align="right">Non-Radar&nbsp;&nbsp;&nbsp;</div></td> <td height="34"><input name="atcexp_nonradar_writein" id="atcexp_nonradar_writein" title="Non-Radar" type="text" tabindex="39" size="5" maxlength="5"/> <span class="tips">yrs</span></td> <td height="34"><div align="right">Military&nbsp;&nbsp;&nbsp;</div></td> <td height="34"><input name="atcexp_military_writein" id="atcexp_military_writein" title="Military" type="text" tabindex="41" size="5" maxlength="5"/> <span class="tips">yrs</span></td> </tr> </table></td> </tr> </table> </td> </tr> <tr> <td class="categoryBox"><table width="697" height="14" border="0" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="118" class="categoryDivider">AIRSPACE</td> <td width="235" class="categoryDivider">CONDITIONS / WEATHER ELEMENTS </td> <td width="195" class="categoryDivider">Light / Visibility </td> <td width="149" class="category">ATC / Advisory Svc. </td> </tr> </table></td> </tr> <tr> <td align="center" valign="middle"><table width="697" height="183" border="0" cellpadding="2" cellspacing="0" class="buttonlabel" role="presentation"> <tr> <td width="113" height="183" align="left" valign="top" class="divider"><table width="105" height="172" border="0" align="center" cellspacing="0" role="presentation"> <tr valign="top"> <td width="103" height="172" align="left"> <label for="airspace_class_a_cbx"> <input name="airspace_class_a_cbx" type="checkbox" id="airspace_class_a_cbx" tabindex="42" value="Y"/>Class A </label><br/> <label for="airspace_class_b_cbx"><input name="airspace_class_b_cbx" type="checkbox" id="airspace_class_b_cbx" tabindex="43" value="Y"/>Class B </label><br/> <label for="airspace_class_c_cbx"><input name="airspace_class_c_cbx" type="checkbox" id="airspace_class_c_cbx" tabindex="44" value="Y"/>Class C </label><br/> <label for="airspace_class_d_cbx"><input name="airspace_class_d_cbx" type="checkbox" id="airspace_class_d_cbx" tabindex="45" value="Y"/>Class D </label><br/> <label for="airspace_class_e_cbx"><input name="airspace_class_e_cbx" type="checkbox" id="airspace_class_e_cbx" tabindex="46" value="Y"/>Class E </label><br/> <label for="airspace_class_g_cbx"> <input name="airspace_class_g_cbx" type="checkbox" id="airspace_class_g_cbx" tabindex="47" value="Y"/>Class G </label><br/> <label for="airspace_special_cbx"><input name="airspace_special_cbx" type="checkbox" id="airspace_special_cbx" tabindex="48" value="Y"/>Special Use </label><br/> <label for="airspace_tfr_cbx"> <input name="airspace_tfr_cbx" type="checkbox" id="airspace_tfr_cbx" tabindex="49" value="Y"/>TFR </label> </td> </tr> </table></td> <td width="232" align="right" valign="top" class="divider"><table width="225" height="176" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="38" colspan="2" align="left" class="horizontal"><label for="weather_conditions_ddlb"> &nbsp; <select name="weather_conditions_ddlb" id="weather_conditions_ddlb" tabindex="50"> <option>( Select Condition )</option> <option>VMC</option> <option>IMC</option> <option>Mixed</option> <option>Marginal</option> </select> </label> </td> </tr> <tr> <td width="109" height="115" align="left" valign="top"><label for="weather_fog_cbx"> <input name="weather_fog_cbx" type="checkbox" id="weather_fog_cbx" tabindex="51" value="Y"/>Fog</label><br/> <label for="weather_hail_cbx"><input name="weather_hail_cbx" type="checkbox" id="weather_hail_cbx" tabindex="52" value="Y"/>Hail</label><br/> <label for="weather_hazesmoke_cbx"><input name="weather_hazesmoke_cbx" type="checkbox" id="weather_hazesmoke_cbx" tabindex="53" value="Y"/>Haze/Smoke</label><br/> <label for="weather_ice_cbx"><input name="weather_ice_cbx" type="checkbox" id="weather_ice_cbx" tabindex="54" value="Y"/>Icing</label><br/> <label for="weather_rain_cbx"><input name="weather_rain_cbx" type="checkbox" id="weather_rain_cbx" tabindex="55" value="Y"/>Rain<br/></label> </td> <td width="116" align="left" valign="top"> <label for="weather_snow_cbx"><input name="weather_snow_cbx" type="checkbox" id="weather_snow_cbx" tabindex="56" value="Y"/>Snow</label><br/> <label for="weather_thunder_cbx"><input name="weather_thunder_cbx" type="checkbox" id="weather_thunder_cbx" tabindex="57" value="Y"/>Thunderstorm</label><br/> <label for="weather_turb_cbx"><input name="weather_turb_cbx" type="checkbox" id="weather_turb_cbx" tabindex="58" value="Y"/>Turbulence</label><br/> <label for="weather_wind_cbx"><input name="weather_wind_cbx" type="checkbox" id="weather_wind_cbx" tabindex="59" value="Y"/> Windshear</label> </td> </tr> <tr> <td height="23" colspan="2" align="left" valign="top"><label for="weather_other_cbx"> <input name="weather_other_cbx" type="checkbox" id="weather_other_cbx" tabindex="60" value="Y"/> Other:&nbsp; </label> <input name="weather_other_writein" type="text" id="weather_other_writein" title="Conditions / Weather Elements - Other" tabindex="61" size="18" maxlength="25"/> </td> </tr> </table></td> <td width="190" align="center" valign="top" class="divider"><table width="183" height="176" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="38" colspan="3" align="left" valign="middle" class="horizontal">&nbsp;&nbsp;<label for="light_ddlb"> <select name="light_ddlb" id="light_ddlb" tabindex="62"> <option>( Select Light )</option> <option>Dawn</option> <option>Daylight</option> <option>Night</option> <option>Dusk</option> </select> </label> </td> </tr> <tr> <td width="55" height="47" align="left"> <div align="right">Ceiling:&nbsp;</div></td> <td width="128" height="47" colspan="2" align="left"> <input name="light_ceiling_writein" type="text" title="Light / Visibility - Ceiling" id="light_ceiling_writein" tabindex="63" size="10" maxlength="5"/> <span class="tips">feet</span></td> </tr> <tr> <td height="47" align="left"> <div align="right">Visibility:&nbsp; </div></td> <td height="47" colspan="2" align="left"> <input name="light_visibility_writein" type="text" title="Light / Visibility - Visibility" id="light_visibility_writein" tabindex="64" size="10" maxlength="5"/> <span class="tips">miles</span></td> </tr> <tr> <td height="44" align="left"> <div align="right">RVR:&nbsp;</div></td> <td height="44" colspan="2" align="left"> <input name="light_rvr_writein" type="text" title="Light/ Visibility - RVR" id="light_rvr_writein" tabindex="65" size="10" maxlength="20"/> <span class="tips">feet</span></td> </tr> </table></td> <td width="146" align="center" valign="top"><table width="129" height="90" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td width="129" height="38" align="left" valign="middle"><label for="atcadvisory_ddlb"> <select name="atcadvisory_ddlb" id="atcadvisory_ddlb" tabindex="66"> <option>( Select ATC )</option> <option>Ramp</option> <option>Ground</option> <option>Tower</option> <option>TRACON</option> <option>Center</option> <option>FSS</option> <option>UNICOM</option> <option>CTAF</option> </select> </label> </td> </tr> <tr> <td height="55" align="left" valign="bottom"><label for="atcadvisory_facility_writein">&nbsp;ATC Facility Name: <input name="atcadvisory_facility_writein" type="text" id="atcadvisory_facility_writein" tabindex="67" size="16" maxlength="50"/> </label></td> </tr> </table></td> </tr> </table></td> </tr> <tr> <td align="center" class="categoryBox"><table width="302" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="302" class="category">aircraft 1 </td> </tr> </table></td> </tr> <tr> <td height="338"><table width="687" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" role="presentation"> <tr> <td height="30" valign="bottom"><strong>&nbsp;Your Aircraft Type</strong></td> <td height="30" colspan="3" valign="bottom">&nbsp; <input name="acft1_makemodel_writein" type="text" title="Aircraft Type - Make / Model" id="acft1_makemodel_writein" tabindex="68" size="35" maxlength="50"/> <span class="tips">(Make / Model, e.g. B737, NOT N #, Flt #, etc) </span></td> </tr> <tr> <td height="5" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td width="135" height="30" valign="bottom"><strong>&nbsp;Operator FAR Part </strong></td> <td width="196" height="30" align="left" valign="bottom"><label for="acft1_farpart_ddlb"> &nbsp; <select name="acft1_farpart_ddlb" id="acft1_farpart_ddlb" tabindex="69"> <option>( Select FAR Part )</option> <option>91</option> <option>103</option> <option>119</option> <option>121</option> <option>125</option> <option>129</option> <option>135</option> <option>137</option> </select> </label></td> <td width="356" height="30" valign="bottom"><label for="acft1_farpart_writein"> Other:&nbsp; <input name="acft1_farpart_writein" type="text" id="acft1_farpart_writein" tabindex="70" size="20" maxlength="3"/></label></td> </tr> <tr> <td height="5" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Operator</strong></td> <td height="30" align="left" valign="bottom"><label for="acft1_oper_ddlb"> &nbsp; <select name="acft1_oper_ddlb" id="acft1_oper_ddlb" tabindex="71"> <option>( Select Operator )</option> <option>Air Carrier</option> <option>Air Taxi</option> <option>Corporate</option> <option>Fractional</option> <option>FBO</option> <option>Government</option> <option>Military</option> <option>Personal</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft1_oper_other_writein">Other:&nbsp; <input name="acft1_oper_other_writein" type="text" id="acft1_oper_other_writein" tabindex="72" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" class="horizontal"><img src="images/spacer.gif" width="10" height="10" alt=""/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Mission</strong></td> <td height="30" align="left" valign="bottom">&nbsp;<label for="acft1_mission_ddlb"> <select name="acft1_mission_ddlb" id="acft1_mission_ddlb" tabindex="73"> <option>( Select Mission )</option> <option>Passenger</option> <option>Personal</option> <option>Cargo/Freight</option> <option>Training</option> <option>Ferry</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft1_mission_other_writein">Other:&nbsp; <input name="acft1_mission_other_writein" type="text" id="acft1_mission_other_writein" tabindex="74" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" valign="top" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Flight Plan </strong></td> <td height="30" colspan="2" valign="bottom">&nbsp;<label for="acft1_plan_ddlb"> <select name="acft1_plan_ddlb" id="acft1_plan_ddlb" tabindex="75"> <option>( Select Flight Plan )</option> <option>VFR</option> <option>IFR</option> <option>SVFR</option> <option>DVFR</option> <option>None</option> </select> </label></td> </tr> <tr> <td height="11" colspan="4" valign="top" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Flight Phase </strong></td> <td height="30" valign="bottom">&nbsp;<label for="acft1_phases_ddlb"> <select name="acft1_phases_ddlb" id="acft1_phases_ddlb" tabindex="76"> <option>( Select Flight Phase )</option> <option>Taxi</option> <option>Parked</option> <option>Takeoff</option> <option>Initial Climb</option> <option>Climb</option> <option>Cruise</option> <option>Descent</option> <option>Initial Approach</option> <option>Final Approach</option> <option>Missed/GAR</option> <option>Landing</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft1_phases_other_writein">Other:&nbsp; <input name="acft1_phases_other_writein" type="text" id="acft1_phases_other_writein" tabindex="77" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="20" valign="middle"><strong>&nbsp;Route in Use </strong></td> <td colspan="3" rowspan="2" align="left" valign="top"><table width="542" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="83" height="27" valign="bottom"> <label for="acft1_route_direct_cbx"><input name="acft1_route_direct_cbx" type="checkbox" id="acft1_route_direct_cbx" tabindex="78" value="Y"/>Direct </label><br/></td> <td width="242" valign="bottom"> <label for="acft1_route_visualapch_cbx"><input name="acft1_route_visualapch_cbx" type="checkbox" id="acft1_route_visualapch_cbx" tabindex="81" value="Y"/>Visual Approach</label> </td> <td width="96" valign="bottom"> <label for="acft1_route_airway_cbx"><input name="acft1_route_airway_cbx" type="checkbox" id="acft1_route_airway_cbx" tabindex="85" value="Y"/>Airway (ID):</label> </td> <td width="121" valign="bottom"> <input name="acft1_route_airway_writein" type="text" title="Aircraft 1 Route in Use - Airway" id="acft1_route_airway_writein" tabindex="86" size="13" maxlength="15"/></td> </tr> <tr> <td height="25"> <label for="acft1_route_oceanic_cbx"><input name="acft1_route_oceanic_cbx" type="checkbox" id="acft1_route_oceanic_cbx" tabindex="79" value="Y"/>Oceanic</label> </td> <td><label for="acft1_route_none_cbx"><input name="acft1_route_none_cbx" type="checkbox" id="acft1_route_none_cbx" tabindex="82" value="Y"/>None </label> </td> <td><label for="acft1_route_star_cbx"><input name="acft1_route_star_cbx" type="checkbox" id="acft1_route_star_cbx" tabindex="87" value="Y"/>STAR (ID):</label> </td> <td><input name="acft1_route_star_writein" type="text" title="Aircraft 1 Route in Use - STAR (ID)" id="acft1_route_star_writein" tabindex="88" size="13" maxlength="15"/></td> </tr> <tr> <td><label for="acft1_route_vectors_cbx"><input name="acft1_route_vectors_cbx" type="checkbox" id="acft1_route_vectors_cbx" tabindex="80" value="Y"/>Vectors</label> </td> <td><label for="acft1_route_other_cbx"><input name="acft1_route_other_cbx" type="checkbox" id="acft1_route_other_cbx" tabindex="83" value="Y"/>Other: </label> <input name="acft1_route_other_writein" type="text" title="Aircraft 1 Route In Use - Other" id="acft1_route_other_writein" tabindex="84" size="19" maxlength="25"/></td> <td><label for="acft1_route_sid_cbx"><input name="acft1_route_sid_cbx" type="checkbox" id="acft1_route_sid_cbx" tabindex="89" value="Y"/>SID (ID):</label></td> <td> <input name="acft1_route_sid_writein" type="text" title="Aircraft 1 Route in Use - SID (ID)" id="acft1_route_sid_writein" tabindex="90" size="13" maxlength="15"/></td> </tr> </table></td> </tr> <tr> <td height="20" valign="bottom">&nbsp;</td> </tr> <tr> <td height="9" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="8" height="8"/></td> </tr> </table> <table width="675" height="48" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="48" colspan="2" align="right" class="tipsheader">iF MORE THAN one AIRCRAFT Was INVOLVED, PLEASE ADD AN ADDITIONAL AIRCRAFT. </td> <td width="203" height="48" align="left"><table width="140" height="25" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td><input type="button" value="Add Aircraft" name="AddAircraft" class="buttonGrey" onClick="document.getElementById('acft2_table').style.display='block';document.getElementById('acft2_table0').style.display='block'"></td> </tr> </table></td> </tr> </table></td> </tr> <tr> <td align="center" class="categoryBox"><table width="302" border="0" cellspacing="0" cellpadding="0" id="acft2_table0" style="display:none" role="presentation"> <tr> <td width="302" class="category">aircraft 2 </td> </tr> </table></td> </tr> <tr> <td><table width="687" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" id="acft2_table" style="display:none" role="presentation"> <tr> <td height="30" valign="bottom"><strong>Other Aircraft Type</strong></td> <td height="30" colspan="3" valign="bottom">&nbsp; <input id="acft2_makemodel_writein" name="acft2_makemodel_writein" type="text" title="Aircraft 2 Type - Make/Model" size="35" maxlength="50"/> <span class="tips">(Make / Model, e.g. B737, NOT N #, Flt #, etc) </span></td> </tr> <tr> <td height="5" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td width="135" height="30" valign="bottom"><strong>&nbsp;Operator FAR Part </strong></td> <td width="196" height="30" align="left" valign="bottom"><label> &nbsp; <select id="acft2_farpart_ddlb" name="acft2_farpart_ddlb"> <option>( Select FAR Part )</option> <option>91</option> <option>103</option> <option>119</option> <option>121</option> <option>125</option> <option>129</option> <option>135</option> <option>137</option> </select> </label></td> <td width="356" height="30" valign="bottom"><label for="acft2_farpart_writein"> Other:&nbsp; <input id="acft2_farpart_writein" name="acft2_farpart_writein" type="text" size="20" maxlength="3"/></label></td> </tr> <tr> <td height="5" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Operator</strong></td> <td height="30" align="left" valign="bottom"><label> &nbsp; <select id="acft2_oper_ddlb" name="acft2_oper_ddlb"> <option>( Select Operator )</option> <option>Air Carrier</option> <option>Air Taxi</option> <option>Corporate</option> <option>Fractional</option> <option>FBO</option> <option>Government</option> <option>Military</option> <option>Personal</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft2_oper_other_writein">Other:&nbsp; <input id="acft2_oper_other_writein" name="acft2_oper_other_writein" type="text" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Mission</strong></td> <td height="30" align="left" valign="bottom"><label for="acft2_mission_ddlb">&nbsp; <select id="acft2_mission_ddlb" name="acft2_mission_ddlb"> <option>( Select Mission )</option> <option>Passenger</option> <option>Personal</option> <option>Cargo/Freight</option> <option>Training</option> <option>Ferry</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft2_mission_other_writein">Other:&nbsp; <input id="acft2_mission_other_writein" name="acft2_mission_other_writein" type="text" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" valign="top" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Flight Plan </strong></td> <td height="30" colspan="2" valign="bottom"><label for="acft2_plan_ddlb">&nbsp; <select id="acft2_plan_ddlb" name="acft2_plan_ddlb"> <option>( Select Flight Plan )</option> <option>VFR</option> <option>IFR</option> <option>SVFR</option> <option>DVFR</option> <option>None</option> </select> </label></td> </tr> <tr> <td height="11" colspan="4" valign="top" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="30" valign="bottom"><strong>&nbsp;Flight Phase </strong></td> <td height="30" valign="bottom"><label for="acft2_phases_ddlb">&nbsp; <select id="acft2_phases_ddlb" name="acft2_phases_ddlb"> <option>( Select Flight Phase )</option> <option>Taxi</option> <option>Parked</option> <option>Takeoff</option> <option>Initial Climb</option> <option>Climb</option> <option>Cruise</option> <option>Descent</option> <option>Initial Approach</option> <option>Final Approach</option> <option>Missed/GAR</option> <option>Landing</option> </select> </label></td> <td height="30" valign="bottom"><label for="acft2_phases_other_writein">Other:&nbsp; <input id="acft2_phases_other_writein" name="acft2_phases_other_writein" type="text" size="20" maxlength="25"/></label></td> </tr> <tr> <td height="11" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="10" height="10"/></td> </tr> <tr> <td height="20" valign="middle"><strong>&nbsp;Route in Use </strong></td> <td colspan="3" rowspan="2" align="left" valign="top"><table width="542" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="96" height="27" valign="bottom"><label for="acft2_route_direct_cbx"> <input type="checkbox" id="acft2_route_direct_cbx" name="acft2_route_direct_cbx" value="Y"/> Direct </label> <br/></td> <td width="229" valign="bottom"><label for="acft2_route_visualapch_cbx"> <input type="checkbox" id="acft2_route_visualapch_cbx" name="acft2_route_visualapch_cbx" value="Y"/> Visual Approach</label> </td> <td width="96" valign="bottom"><label for="acft2_route_airway_cbx"> <input type="checkbox" id="acft2_route_airway_cbx" name="acft2_route_airway_cbx" value="Y"/> Airway (ID):</label> </td> <td width="121" valign="bottom"><input id="acft2_route_airway_writein" name="acft2_route_airway_writein" type="text" title="Aircraft 2 Route in Use - Airway" size="13" maxlength="15"/></td> </tr> <tr> <td height="25"><label for="acft2_route_oceanic_cbx"> <input type="checkbox" id="acft2_route_oceanic_cbx" name="acft2_route_oceanic_cbx" value="Y"/> Oceanic</label> </td> <td><label for="acft2_route_none_cbx"> <input type="checkbox" id="acft2_route_none_cbx" name="acft2_route_none_cbx" value="Y"/> None </label> </td> <td><label for="acft2_route_star_cbx"> <input type="checkbox" id="acft2_route_star_cbx" name="acft2_route_star_cbx" value="Y"/> STAR (ID):</label> </td> <td><input id="acft2_route_star_writein" name="acft2_route_star_writein" type="text" title="Aircraft 2 Route in Use - STAR (ID)" size="13" maxlength="15"/></td> </tr> <tr> <td><label for="acft2_route_vectors_cbx"> <input type="checkbox" id="acft2_route_vectors_cbx" name="acft2_route_vectors_cbx" value="Y"/> Vectors</label> </td> <td><label for="acft2_route_other_cbx"> <input type="checkbox" id="acft2_route_other_cbx" name="acft2_route_other_cbx" value="Y"/> Other: </label> <input id="acft2_route_other_writein" name="acft2_route_other_writein" type="text" title="Aircraft 2 Route in Use - Other" size="19" maxlength="25"/></td> <td><label for="acft2_route_sid_cbx"> <input type="checkbox" id="acft2_route_sid_cbx" name="acft2_route_sid_cbx" value="Y"/> SID (ID):</label></td> <td> <input id="acft2_route_sid_writein" name="acft2_route_sid_writein" type="text" title="Aircraft 2 Route in Use - SID (ID)" size="13" maxlength="15"/></td> </tr> </table></td> </tr> <tr> <td height="20" valign="bottom">&nbsp;</td> </tr> <tr> <td height="9" colspan="4" class="horizontal"><img src="images/spacer.gif" alt="" width="8" height="8"/></td> </tr> </table></td> </tr> <tr> <td align="center" class="categoryBox"> <table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="182" height="15" class="categoryRight">Location&nbsp;&nbsp;</td></tr> </table></td> </tr> <tr> <td height="186"><table width="697" height="173" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" role="presentation"> <tr> <td width="364" class="divider"><table width="361" height="182" border="0" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="37" colspan="3" align="left" class="horizontal"> <label for="location_altitude_writein">&nbsp;&nbsp;&nbsp;Altitude: <input name="location_altitude_writein" type="text" id="location_altitude_writein" tabindex="91" size="5" maxlength="25"/></label> <span class="tips">(single value)</span> </td> <td width="143" align="left" class="horizontal"> <label for="location_altitude_msl_rb"> <input name="location_altitude_rb" type="radio" id="location_altitude_msl_rb" tabindex="92" value="MSL"/> MSL &nbsp;</label> <label for="location_altitude_agl_rb"><input name="location_altitude_rb" type="radio" id="location_altitude_agl_rb" tabindex="93" value="AGL"/>AGL</label></td> </tr> <tr> <td height="37" colspan="4" align="left" valign="middle"><span style="line-height:34px;"><label for="location_distance_writein">&nbsp;&nbsp;&nbsp;Distance: <input name="location_distance_writein" type="text" id="location_distance_writein" tabindex="94" size="5" maxlength="25"/> <span class="tips"> &nbsp;and/or</span></label> <label for="location_radial_writein"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radial: <span class="tips">(bearing)</span> <input name="location_radial_writein" type="text" id="location_radial_writein" tabindex="95" size="5" maxlength="15"/> <span class="tips">from:</span> </label></span></td> </tr> <tr> <td width="181" height="54" align="left"> <label for="location_airport_rbg"> <input name="location" type="radio" id="location_airport_rbg" tabindex="96" value="Airport"/> Airport</label> <br> <input name="location_airport_writein" type="text" title="Location - Airport" id="location_airport_writein" tabindex="97" size="15" maxlength="25" style="margin-left:20px;"/></td> <td height="54" colspan="3" align="left"><label for="location_atcfac_rbg"> <input name="location" type="radio" id="location_atcfac_rbg" tabindex="100" value="ATC Fac"/> ATC Fac</label> <br> <input name="location_atcfac_writein" type="text" title="Location ATC Facility" id="location_atcfac_writein" tabindex="101" size="15" maxlength="25" style="margin-left:20px;"/></td> </tr> <tr> <td height="54" align="left"> <label for="location_intersection_rbg"><input name="location" type="radio" id="location_intersection_rbg" tabindex="98" value="Intersection"/>Intersection<br> </label> <input name="location_intersection_writein" type="text" title="Location - Intersection" id="location_intersection_writein" tabindex="99" size="15" maxlength="10" style="margin-left:20px;"/></td> <td colspan="3" align="left"> <label for="location_navaid_rbg"> <input name="location" type="radio" id="location_navaid_rbg" tabindex="102" value="NAVAID"/> NAVAID&nbsp;&nbsp;<br> </label> <input name="location_navaid_writein" type="text" title="Location NAVAID" id="location_navaid_writein" tabindex="103" size="15" maxlength="10" style="margin-left:20px;"/></td></tr> </table></td> <td width="333" valign="top"><table width="317" height="135" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td height="25" colspan="4">Estimated miss distance in feet:</td> </tr> <tr> <td width="14" height="33" valign="top">&nbsp;</td> <td width="154" valign="top"><label for="conflicts_horiz_writein"><span class="tips">Horizontal</span> <input name="conflicts_horiz_writein" type="text" id="conflicts_horiz_writein" tabindex="104" size="8" maxlength="7"/></label></td> <td height="33" colspan="2" valign="top"><label for="conflicts_vert_writein"><span class="tips">Vertical</span> <input name="conflicts_vert_writein" type="text" id="conflicts_vert_writein" tabindex="105" size="8" maxlength="7"/></label></td> </tr> <tr> <td height="30" colspan="3">Was evasive action taken?</td> <td width="95" height="30"><label for="conflicts_evasive_yes_rb"> <input name="conflicts_evasive_rb" type="radio" id="conflicts_evasive_yes_rb" tabindex="106" value="Y"/>Yes</label> <label for="conflicts_evasive_no_rb">&nbsp; <input name="conflicts_evasive_rb" type="radio" id="conflicts_evasive_no_rb" tabindex="107" value="N"/> No</label></td> </tr> <tr> <td height="30" colspan="2">Was TCAS a factor?</td> <td width="54" height="30"><label for="conflicts_tcas_ta_rb"><input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_ta_rb" tabindex="108" value="Aircraft TA"/> TA </label></td> <td height="30"><label for="conflicts_tcas_ra_rb"> <input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_ra_rb" tabindex="109" value="Aircraft RA"/> RA </label> <label for="conflicts_tcas_no_rb">&nbsp;&nbsp; <input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_no_rb" tabindex="110" value="N"/> No</label></td> </tr> <tr> <td height="30" colspan="3"> Did terrain warning system activate?</td> <td height="30"><label for="conflicts_terrainwarning_yes_rb"> <input name="conflicts_terrainwarning_rb" type="radio" id="conflicts_terrainwarning_yes_rb" tabindex="111" value="Y"/>Yes</label> <label for="conflicts_terrainwarning_no_rb">&nbsp; <input name="conflicts_terrainwarning_rb" type="radio" id="conflicts_terrainwarning_no_rb" tabindex="112" value="N"/> No</label></td> </tr> </table></td> </tr> </table></td> </tr> <tr> <td align="center" class="categoryBox"><table width="302" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td width="302" class="category">Describe event/situation </td> </tr> </table></td> </tr> <tr> <td><table width="675" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"> <tr> <td colspan="6" class="tips">Keeping in mind the topics shown below, discuss those which you feel are relevant and anything else you think is important. Include what you believe really caused the problem, and what can be done to prevent a recurrence, or correct the situation. <hr/></td> </tr> <tr> <td colspan="6" class="tips"><br/> <textarea name="narrative1" cols="93" rows="20" class="narrative" title="Narrative - Describe Event / Situation" id="narrative1" tabindex="113" maxlength="16000"></textarea> <hr/></td> </tr> <tr> <td colspan="2" class="tipsheader">chain of events </td> <td width="7" class="divider">&nbsp;</td> <td width="7">&nbsp;</td> <td colspan="2" class="tipsheader">human performance considerations </td> </tr> <tr> <td width="165" class="tips">- How the problem arose<br/> - Contributing factors </td> <td width="165" class="tips">- How it was discovered<br/> - Corrective actions </td> <td width="7" class="divider">&nbsp;</td> <td width="7">&nbsp;</td> <td width="232" class="tips">- Perceptions, judgements, decisions <br/> - Factors affecting the quality of human performance </td> <td width="99" valign="top" class="tips">- Actions or inactions<br/></td> </tr> <tr> <td colspan="6" class="tips"><hr/></td> </tr> <tr> <td height="16" colspan="5" align="right" valign="top" class="tips"><table width="346" border="0" align="left" cellpadding="0" cellspacing="0" class="entryCaveat" role="presentation"> <tr> <td align="center"><strong>GENERAL FORM</strong><br><span class="tips"></span></td> </tr> </table></td> </tr> </table></td> </tr> <tr valign="middle"> <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation"> <tr> <td> <table width="700" height="62" border="0" cellpadding="3" cellspacing="5" role="presentation"> </table> </td> </tr> <tr valign="middle"> <td height="5" align="center" valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" alt="" width="5" height="5"/></td> </tr> <tr valign="middle" bgcolor="#E3E4E6" class="footerBackdrop"> <td valign="top" class="entryCaveat"><table width="100%" border="0" cellspacing="3" cellpadding="10" role="presentation"> <tr> <td><p><strong>You can save this page as a PDF by using your browser's print page functionality (most browser's have a shortcut CTRL+P). See the <a href="https://discord.com/channels/247780029449240576/249587091321782282/1086854258411978793">PilotEdge Discord thread here</a>.</strong></p> </td> </tr> </table></td> </tr> <tr valign="middle"> <td height="5" align="center" valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" alt="" width="5" height="5"/></td> </tr> </table> </form> </body> </html>
+        .margins {
+            margin-top: 10px;
+            margin-bottom: 10px
+        }
+
+        .backdrop {
+            background-image: url(../images/bg_gradientDrk.jpg);
+            background-position: top;
+            background-repeat: repeat-x;
+            background-color: #fff;
+            margin-top: 20px
+        }
+
+        .headerBackdrop {
+            background-image: url(../images/bg_top.jpg);
+            background-position: top;
+            background-repeat: repeat-x;
+            margin-top: 20px
+        }
+
+        .footerBackdrop {
+            background-image: url(../images/bg_footer.jpg);
+            background-position: bottom;
+            background-repeat: repeat-x;
+            margin-top: 20px
+        }
+
+        .tableBorder {
+            border: 1px solid #787878
+        }
+
+        .entryCaveat {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            color: #333;
+            line-height: 16px
+        }
+
+        .formName {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial,Helvetica,sans-serif;
+            text-align: center;
+            color: #333;
+            text-transform: uppercase
+        }
+
+            .formName.alert {
+                color: #f00 !important;
+                font-size: 12px !important;
+                text-transform: none !important;
+                padding: 5px 0 5px 0 !important
+            }
+
+        .titleASRS {
+            font-family: "Arial Narrow",Helvetica,sans-serif;
+            font-weight: bold;
+            color: #0d2d76;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 17px
+        }
+
+        .titleDirections {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px
+        }
+
+        .tips {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 9px;
+            color: #666;
+            text-decoration: none
+        }
+
+        .tipsheader {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #666;
+            text-align: center
+        }
+
+        .reporttext {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 10px;
+            color: #000
+        }
+
+        .tightText {
+            letter-spacing: -1px
+        }
+
+        .narrative {
+            font-family: "Courier New",Courier,monospace;
+            font-size: 12px;
+            color: #000;
+            width: 665px;
+            -webkit-text-size-adjust: none
+        }
+
+        pre {
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            white-space: pre-wrap;
+            word-wrap: break-word
+        }
+
+        .narrativePrint {
+            font-family: "Courier New",Courier,monospace;
+            font-size: 12px;
+            color: #000;
+            width: 665px
+        }
+
+        .category {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center
+        }
+
+        .categoryRight {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: right
+        }
+
+        .categoryDivider {
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: #666;
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+            text-align: center
+        }
+
+        .categoryDividerLeft {
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: #666;
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+            text-align: left
+        }
+
+        .categoryBox {
+            background-image: url(../images/bg_grey.gif);
+            background-repeat: repeat-x;
+            border: 1px solid #999;
+            background-position: bottom;
+            background-color: #d0d0d0
+        }
+
+        .directionsBox {
+            background-image: url(../images/bg_drkgrey.jpg);
+            background-repeat: repeat-x;
+            border: 1px solid #707070;
+            background-position: bottom;
+            background-color: #8e8e8e;
+            text-align: center
+        }
+
+        .vertical {
+            border-left-width: 1px;
+            border-left-style: dotted;
+            border-left-color: #999
+        }
+
+        .divider {
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: #999
+        }
+
+        .horizontal {
+            border-bottom-width: 1px;
+            border-bottom-style: dotted;
+            border-bottom-color: #666
+        }
+
+        .horizontalTOP {
+            border-top-width: 1px;
+            border-top-style: dotted;
+            border-top-color: #666
+        }
+
+        @-moz-document url-prefix() {
+            input#location_latitude_writein {
+                width: 6.8em
+            }
+        }
+
+        @-moz-document url-prefix() {
+            input#location_longitude_writein {
+                width: 6.8em
+            }
+        }
+
+        @-moz-document url-prefix() {
+            input#location_airport_writein {
+                width: 8em
+            }
+        }
+
+        @-moz-document url-prefix() {
+            input#location_navaid_writein {
+                width: 8em
+            }
+        }
+
+        @-moz-document url-prefix() {
+            input#acft1_UAScontrolling_writein {
+                width: 9.2em
+            }
+        }
+
+        @-moz-document url-prefix() {
+            input#acft2_UAScontrolling_writein {
+                width: 9.2em
+            }
+        }
+
+        .button {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #666;
+            text-align: center;
+            background-image: url(../images/bg_white.gif);
+            background-repeat: repeat-x;
+            display: block;
+            vertical-align: middle;
+            padding-right: -10px;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px
+        }
+
+            .button:hover {
+                color: #000;
+                border: 1px solid #000;
+                background-image: url(../images/bg_whiteHover.gif);
+                background-repeat: repeat-x
+            }
+
+            .button:link {
+                color: #333;
+                text-decoration: none
+            }
+
+        .buttonlabel {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            color: #000;
+            line-height: 20px
+        }
+
+        #backButton {
+            visibility: hidden
+        }
+
+        #submitButton {
+            visibility: hidden
+        }
+
+        .buttonGrey, .buttonGrey:visited {
+            color: #fff;
+            font-size: 14px;
+            width: 95%;
+            float: right;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 8px 10px 8px;
+            background-color: #333;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: solid 1px #333;
+            -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none
+        }
+
+            .buttonGrey:hover, .buttonGrey:active {
+                background-color: rgba(0,0,0,0.06);
+                border: solid 2px #333;
+                color: #333;
+                font-weight: bold;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none
+            }
+
+        .body-styling {
+            font-family: Arial,Helvetica,sans-serif;
+            background-image: url(../images/bg_gradient.jpg);
+            background-repeat: repeat-x;
+            background-position: top;
+            background-color: #fff;
+            margin-top: 35px;
+            color: #2e271d;
+            font-size: 13px;
+            line-height: 21px
+        }
+
+        .bounding-frame {
+            background-color: #fff;
+            display: block;
+            text-align: left;
+            width: 665px;
+            vertical-align: top;
+            padding: 10px 20px 20px 20px;
+            border: 1px solid #ccc;
+            margin: auto
+        }
+
+        .header-image {
+            display: block;
+            margin-bottom: 10px
+        }
+
+        .content-frame {
+            background-color: #f0f0f0;
+            display: block;
+            text-align: left;
+            vertical-align: top;
+            padding: 20px;
+            margin: auto
+        }
+
+        .thankyou {
+            color: #233f57;
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 29px
+        }
+
+        .contribution {
+            color: #0d2d76;
+            font-size: 17px;
+            font-style: italic;
+            text-align: right;
+            margin-top: 10px;
+            display: block;
+            float: left;
+            width: 75%
+        }
+
+        .logo {
+            display: block;
+            float: right;
+            width: 23%
+        }
+
+            .logo img {
+                float: right
+            }
+
+        .body-styling ul li {
+            margin-bottom: 10px
+        }
+
+        .code-block {
+            text-align: center;
+            display: block;
+            margin-bottom: 20px
+        }
+
+        .msg-block {
+            background-color: #fff;
+            display: block;
+            text-align: center;
+            color: #2e271d;
+            width: 85%;
+            padding: 15px;
+            border: 1px solid #ded8c1;
+            line-height: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .row {
+            display: block;
+            width: 100%;
+            height: 43px;
+            padding-top: 10px;
+            margin-top: 10px
+        }
+
+        .closeTip {
+            font-size: 12px;
+            color: #666;
+            display: block;
+            float: left;
+            width: 75%
+        }
+
+        .print {
+            display: block;
+            float: right;
+            width: 23%
+        }
+
+        .back {
+            display: block;
+            float: left;
+            width: 28%;
+            margin-left: -8px
+        }
+
+        .continue {
+            display: block;
+            float: right;
+            width: 28%
+        }
+
+        @-ms-viewport {
+            width: device-width;
+            initial-scale: 1.0
+        }
+
+        @media screen and (max-device-width:850px) {
+            body {
+                -webkit-text-size-adjust: 100%
+            }
+        }
+
+        @media(max-width:685px) {
+            html, body {
+                overflow-x: hidden
+            }
+
+            body {
+                margin: 0
+            }
+
+            .body-styling {
+                margin-top: 0;
+                background-color: #fff;
+                background-image: none;
+                font-size: 15px;
+                line-height: 22px
+            }
+
+            .bounding-frame {
+                width: 100% !important;
+                padding: 0;
+                margin: auto;
+                border: 0;
+                margin-bottom: 50px !important
+            }
+
+            .header-image {
+                margin-top: 10px
+            }
+
+            .row {
+                margin-right: 20px;
+                margin-left: 20px;
+                padding-bottom: 20px
+            }
+
+            .logo img {
+                float: left !important
+            }
+
+            .back {
+                width: 43%;
+                margin-right: 30px
+            }
+
+            .continue {
+                width: 43%;
+                float: left !important
+            }
+
+            .closeTip {
+                width: 65%;
+                margin-right: 20px;
+                font-size: 13px
+            }
+
+            .print {
+                float: left !important
+            }
+        }
+
+        @media(max-width:550px) {
+            .contribution {
+                text-align: left;
+                width: 72%;
+                margin-right: 10px;
+                margin-top: 0 !important
+            }
+
+            .logo {
+                width: 18%;
+                margin-right: 10px
+            }
+
+            @media(max-width:410px) {
+                .row {
+                    padding-bottom: 35px
+                }
+
+                .contribution {
+                    width: 62%;
+                    margin-right: 10px
+                }
+
+                .logo {
+                    width: 28%;
+                    margin-right: 10px
+                }
+
+                .back {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-right: auto !important;
+                    margin-left: auto !important
+                }
+
+                .continue {
+                    width: 100%;
+                    float: none !important;
+                    margin-bottom: 15px
+                }
+
+                .closeTip {
+                    width: 90% !important;
+                    margin-bottom: 15px
+                }
+
+                .print {
+                    float: none !important;
+                    width: 100%;
+                    margin-bottom: 15px
+                }
+
+                .buttonGrey {
+                    float: left !important;
+                    width: 90%;
+                    margin-right: 0;
+                    margin-left: 0
+                }
+            }
+    </style>
+
+</head>
+<body class="margins">
+    <form id="ERS_B_form" name="ERS_B_form" method="POST" action="submit_process.php" autocomplete="off">
+        <input type="hidden" id="form_type" name="form_type" value="ERS_B" /> <input type="hidden" id="form_version" name="form_version" value="1.0" />
+        <div class="formName">MIMIC FORM</div>
+        <table width="707" border="0" align="center" cellpadding="4" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#E0E9F4" role="presentation">
+            <tr>
+                <td width="699" height="300">
+                    <table width="675" height="321" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td height="45" colspan="5" align="center" class="tips">
+                                <em class="tipsheader"><br /> <br /> </em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="435" height="45" colspan="4" class="tips">
+                                IDENTIFICATION STRIP:
+                                <em>Please fill in all blanks to ensure return of strip.<br /> </em>
+                            </td>
+                            <td width="240" rowspan="2" valign="bottom"></td>
+                        </tr>
+                        <tr>  </tr>
+                        <tr>
+                            <td valign="middle">
+                                <table width="194" height="100" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="50" class="reporttext">
+                                            <label for="type_event_situation">TYPE OF EVENT/SITUATION <br /> <textarea name="type_event_situation" cols="25" rows="2" id="type_event_situation" tabindex="11" maxlength="75"></textarea></label>
+                                        </td>
+                                    </tr>
+                                    <tr valign="bottom">
+                                        <td height="45" class="reporttext">
+                                            <label for="date_occurrence">DATE OF OCCURRENCE<span class="tips"> (MM/DD/YYYY) </span><br /> <input name="date_occurrence" type="text" id="date_occurrence" tabindex="12" size="15" maxlength="10" /></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="50" class="reporttext">
+                                            <label for="local_time">LOCAL TIME <span class="tips">(24 HR. CLOCK) [HH:MM]</span> <br /> <input name="local_time" type="text" id="local_time" tabindex="13" size="15" maxlength="5" /></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="675" height="23" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td height="23" colspan="3" class="tipsheader">please fill in appropriate spaces and check all items which apply to this event or situation. </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td width="182" class="categoryRight">REPORTER&nbsp;&nbsp;</td>
+                            <td width="344" class="category">FLYING TIME (in hours) </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" class="buttonlabel">
+                    <table width="697" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td width="353" height="138" valign="top" class="divider">
+                                <table width="345" height="140" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td width="117" height="22" align="left" valign="top" class="horizontal">
+                                            <label for="rptr_captain_rb"><input name="rptr_CapFirst" type="radio" id="rptr_captain_rb" tabindex="14" value="Captain" /> Captain </label>
+                                            <br />
+                                            <label for="rptr_firstofficer_rb"><input name="rptr_CapFirst" type="radio" id="rptr_firstofficer_rb" tabindex="15" value="First Officer" /> First Officer </label>
+                                        </td>
+                                        <td width="6" rowspan="3" align="left" class="vertical">&nbsp;</td>
+                                        <td width="222" rowspan="3" align="left" valign="top">
+                                            <label for="rptr_singlepilot_rb"><input name="rptr_SITDO" type="radio" id="rptr_singlepilot_rb" tabindex="20" value="Single Pilot" /> Single Pilot </label>
+                                            <br />
+                                            <label for="rptr_instructor_rb"><input name="rptr_SITDO" type="radio" id="rptr_instructor_rb" tabindex="21" value="Instructor" /> Instructor</label>
+                                            <br />
+                                            <label for="rptr_dispatcher_rb"> <input name="rptr_SITDO" type="radio" id="rptr_dispatcher_rb" tabindex="23" value="Dispatcher" /> Dispatcher: &nbsp;</label>
+                                            <label for="rptr_dispatcher_writein"> <input name="rptr_dispatcher_writein" type="text" id="rptr_dispatcher_writein" tabindex="24" size="8" maxlength="5" /> <span class="tips">yrs</span></label>
+                                            <br />
+                                            <label for="rptr_other_rb"><input name="rptr_SITDO" type="radio" id="rptr_other_rb" tabindex="25" value="Other" /> <label for="rptr_other_writein"> Other:</label>&nbsp; <input name="rptr_other_writein" type="text" id="rptr_other_writein" tabindex="26" size="17" maxlength="25" /></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="horizontal">
+                                            <label for="rptr_pilotflying_rb"><input name="rptr_PFPNF" type="radio" id="rptr_pilotflying_rb" tabindex="16" value="Pilot Flying" /> Pilot Flying </label>
+                                            <br />
+                                            <label for="rptr_pilotnotflying_rb"><input name="rptr_PFPNF" type="radio" id="rptr_pilotnotflying_rb" tabindex="17" value="Pilot Not Flying" /> Pilot Not Flying</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="46" align="left">
+                                            <label for="rptr_reliefpilot_rb"><input name="rptr_ReliefCheck" type="radio" id="rptr_reliefpilot_rb" tabindex="18" value="Relief Pilot" /> Relief Pilot</label>
+                                            <br />
+                                            <label for="rptr_checkairman_rb"><input name="rptr_ReliefCheck" type="radio" id="rptr_checkairman_rb" tabindex="19" value="Check Airman" /> Check Airman</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="344" valign="top">
+                                <table width="265" height="137" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td width="85" height="46">
+                                            <label for="flyingtime_totaltime_writein">
+                                                <div align="right" valign="middle">Total Time: &nbsp;</div>
+                                            </label>
+                                        </td>
+                                        <td width="180" height="46" valign="middle">
+                                            <input name="flyingtime_totaltime_writein" type="text" id="flyingtime_totaltime_writein" tabindex="27" size="10" maxlength="9" />
+                                            <span class="tips">hrs</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="45">
+                                            <label for="flyingtime_last90days_writein">
+                                                <div align="right" valign="middle">Last 90 Days: &nbsp;</div>
+                                            </label>
+                                        </td>
+                                        <td height="45" valign="middle">
+                                            <input name="flyingtime_last90days_writein" type="text" id="flyingtime_last90days_writein" tabindex="28" size="10" maxlength="6" />
+                                            <span class="tips">hrs</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="46">
+                                            <label for="flyingtime_timeintype_writein">
+                                                <div align="right" valign="middle">Time in Type:&nbsp;&nbsp;</div>
+                                            </label>
+                                        </td>
+                                        <td height="46" valign="middle">
+                                            <input name="flyingtime_timeintype_writein" type="text" id="flyingtime_timeintype_writein" tabindex="28" size="10" maxlength="9" />
+                                            <span class="tips">hrs</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td width="353" class="categoryDivider">Certificates &amp; ratings </td>
+                            <td width="202" class="categoryRight">ATC Experience&nbsp;&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" class="buttonlabel">
+                    <table width="697" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td width="353" height="113" valign="top" class="divider">
+                                <table width="340" height="112" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="41" colspan="2" class="horizontal">
+                                            <label for="certratings_ddlb"> <select name="certratings_ddlb" id="certratings_ddlb" tabindex="29"> <option>( Select Certificate )</option> <option>Student</option> <option>Sport/Recreational</option> <option>Private</option> <option>Commercial</option> <option>ATP</option> </select> </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="175" height="46">
+                                            <label for="certratings_fltinstructor_cbx"><input name="certratings_fltinstructor_cbx" type="checkbox" id="certratings_fltinstructor_cbx" tabindex="30" value="Y" /> Flight Instructor</label>
+                                            <br />
+                                            <label for="certratings_multiengine_cbx"><input type="checkbox" id="certratings_multiengine_cbx" name="certratings_multiengine_cbx" tabindex="31" value="Y" /> Multiengine</label>
+                                        </td>
+                                        <td width="165">
+                                            <label for="certratings_instrument_cbx"><input type="checkbox" id="certratings_instrument_cbx" name="certratings_instrument_cbx" tabindex="32" value="Y" /> Instrument</label>
+                                            <br />
+                                            <label for="certratings_fltengineer_cbx"><input type="checkbox" id="certratings_fltengineer_cbx" name="certratings_fltengineer_cbx" tabindex="33" value="Y" />Flight Engineer </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25" colspan="2" valign="top">
+                                            <label for="certratings_other_cbx"><input type="checkbox" id="certratings_other_cbx" name="certratings_other_cbx" tabindex="34" value="Y" /> Other:&nbsp; </label>
+                                            <input name="certratings_other_writein" type="text" id="certratings_other_writein" title="Certificates & Ratings - Other" tabindex="35" size="20" maxlength="25" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="344" valign="top">
+                                <table width="334" height="109" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="41" class="horizontal">
+                                            <label for="atcexp_fpl_rb"> <input name="atcexp_rb" type="radio" id="atcexp_fpl_rb" tabindex="36" value="FPL" /> FPL </label>
+                                        </td>
+                                        <td height="41" class="horizontal" colspan="3">
+                                            <label for="atcexp_developmental_rb"><input name="atcexp_rb" type="radio" id="atcexp_developmental_rb" tabindex="37" value="Developmental" /> Developmental</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="78" height="34">
+                                            <div align="right">Radar&nbsp;&nbsp;&nbsp;</div>
+                                        </td>
+                                        <td width="89" height="34">
+                                            <input name="atcexp_radar_writein" id="atcexp_radar_writein" type="text" title="Radar" tabindex="38" size="5" maxlength="5" />
+                                            <span class="tips">yrs</span>
+                                        </td>
+                                        <td width="80" height="34">
+                                            <div align="right">Supervisory&nbsp;&nbsp;&nbsp;</div>
+                                        </td>
+                                        <td width="87" height="34">
+                                            <input name="atcexp_supervisory_writein" id="atcexp_supervisory_writein" type="text" title="Supervisor" tabindex="40" size="5" maxlength="5" />
+                                            <span class="tips">yrs</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="34">
+                                            <div align="right">Non-Radar&nbsp;&nbsp;&nbsp;</div>
+                                        </td>
+                                        <td height="34">
+                                            <input name="atcexp_nonradar_writein" id="atcexp_nonradar_writein" title="Non-Radar" type="text" tabindex="39" size="5" maxlength="5" />
+                                            <span class="tips">yrs</span>
+                                        </td>
+                                        <td height="34">
+                                            <div align="right">Military&nbsp;&nbsp;&nbsp;</div>
+                                        </td>
+                                        <td height="34">
+                                            <input name="atcexp_military_writein" id="atcexp_military_writein" title="Military" type="text" tabindex="41" size="5" maxlength="5" />
+                                            <span class="tips">yrs</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="categoryBox">
+                    <table width="697" height="14" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td width="118" class="categoryDivider">AIRSPACE</td>
+                            <td width="235" class="categoryDivider">CONDITIONS / WEATHER ELEMENTS </td>
+                            <td width="195" class="categoryDivider">Light / Visibility </td>
+                            <td width="149" class="category">ATC / Advisory Svc. </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" valign="middle">
+                    <table width="697" height="183" border="0" cellpadding="2" cellspacing="0" class="buttonlabel" role="presentation">
+                        <tr>
+                            <td width="113" height="183" align="left" valign="top" class="divider">
+                                <table width="105" height="172" border="0" align="center" cellspacing="0" role="presentation">
+                                    <tr valign="top">
+                                        <td width="103" height="172" align="left">
+                                            <label for="airspace_class_a_cbx"> <input name="airspace_class_a_cbx" type="checkbox" id="airspace_class_a_cbx" tabindex="42" value="Y" />Class A </label>
+                                            <br />
+                                            <label for="airspace_class_b_cbx"><input name="airspace_class_b_cbx" type="checkbox" id="airspace_class_b_cbx" tabindex="43" value="Y" />Class B </label>
+                                            <br />
+                                            <label for="airspace_class_c_cbx"><input name="airspace_class_c_cbx" type="checkbox" id="airspace_class_c_cbx" tabindex="44" value="Y" />Class C </label>
+                                            <br />
+                                            <label for="airspace_class_d_cbx"><input name="airspace_class_d_cbx" type="checkbox" id="airspace_class_d_cbx" tabindex="45" value="Y" />Class D </label>
+                                            <br />
+                                            <label for="airspace_class_e_cbx"><input name="airspace_class_e_cbx" type="checkbox" id="airspace_class_e_cbx" tabindex="46" value="Y" />Class E </label>
+                                            <br />
+                                            <label for="airspace_class_g_cbx"> <input name="airspace_class_g_cbx" type="checkbox" id="airspace_class_g_cbx" tabindex="47" value="Y" />Class G </label>
+                                            <br />
+                                            <label for="airspace_special_cbx"><input name="airspace_special_cbx" type="checkbox" id="airspace_special_cbx" tabindex="48" value="Y" />Special Use </label>
+                                            <br />
+                                            <label for="airspace_tfr_cbx"> <input name="airspace_tfr_cbx" type="checkbox" id="airspace_tfr_cbx" tabindex="49" value="Y" />TFR </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="232" align="right" valign="top" class="divider">
+                                <table width="225" height="176" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="38" colspan="2" align="left" class="horizontal">
+                                            <label for="weather_conditions_ddlb"> &nbsp; <select name="weather_conditions_ddlb" id="weather_conditions_ddlb" tabindex="50"> <option>( Select Condition )</option> <option>VMC</option> <option>IMC</option> <option>Mixed</option> <option>Marginal</option> </select> </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="109" height="115" align="left" valign="top">
+                                            <label for="weather_fog_cbx"> <input name="weather_fog_cbx" type="checkbox" id="weather_fog_cbx" tabindex="51" value="Y" />Fog</label>
+                                            <br />
+                                            <label for="weather_hail_cbx"><input name="weather_hail_cbx" type="checkbox" id="weather_hail_cbx" tabindex="52" value="Y" />Hail</label>
+                                            <br />
+                                            <label for="weather_hazesmoke_cbx"><input name="weather_hazesmoke_cbx" type="checkbox" id="weather_hazesmoke_cbx" tabindex="53" value="Y" />Haze/Smoke</label>
+                                            <br />
+                                            <label for="weather_ice_cbx"><input name="weather_ice_cbx" type="checkbox" id="weather_ice_cbx" tabindex="54" value="Y" />Icing</label>
+                                            <br />
+                                            <label for="weather_rain_cbx"><input name="weather_rain_cbx" type="checkbox" id="weather_rain_cbx" tabindex="55" value="Y" />Rain<br /></label>
+                                        </td>
+                                        <td width="116" align="left" valign="top">
+                                            <label for="weather_snow_cbx"><input name="weather_snow_cbx" type="checkbox" id="weather_snow_cbx" tabindex="56" value="Y" />Snow</label>
+                                            <br />
+                                            <label for="weather_thunder_cbx"><input name="weather_thunder_cbx" type="checkbox" id="weather_thunder_cbx" tabindex="57" value="Y" />Thunderstorm</label>
+                                            <br />
+                                            <label for="weather_turb_cbx"><input name="weather_turb_cbx" type="checkbox" id="weather_turb_cbx" tabindex="58" value="Y" />Turbulence</label>
+                                            <br />
+                                            <label for="weather_wind_cbx"><input name="weather_wind_cbx" type="checkbox" id="weather_wind_cbx" tabindex="59" value="Y" /> Windshear</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="23" colspan="2" align="left" valign="top">
+                                            <label for="weather_other_cbx"> <input name="weather_other_cbx" type="checkbox" id="weather_other_cbx" tabindex="60" value="Y" /> Other:&nbsp; </label>
+                                            <input name="weather_other_writein" type="text" id="weather_other_writein" title="Conditions / Weather Elements - Other" tabindex="61" size="18" maxlength="25" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="190" align="center" valign="top" class="divider">
+                                <table width="183" height="176" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="38" colspan="3" align="left" valign="middle" class="horizontal">
+                                            &nbsp;&nbsp;
+                                            <label for="light_ddlb"> <select name="light_ddlb" id="light_ddlb" tabindex="62"> <option>( Select Light )</option> <option>Dawn</option> <option>Daylight</option> <option>Night</option> <option>Dusk</option> </select> </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="55" height="47" align="left">
+                                            <div align="right">Ceiling:&nbsp;</div>
+                                        </td>
+                                        <td width="128" height="47" colspan="2" align="left">
+                                            <input name="light_ceiling_writein" type="text" title="Light / Visibility - Ceiling" id="light_ceiling_writein" tabindex="63" size="10" maxlength="5" />
+                                            <span class="tips">feet</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="47" align="left">
+                                            <div align="right">Visibility:&nbsp; </div>
+                                        </td>
+                                        <td height="47" colspan="2" align="left">
+                                            <input name="light_visibility_writein" type="text" title="Light / Visibility - Visibility" id="light_visibility_writein" tabindex="64" size="10" maxlength="5" />
+                                            <span class="tips">miles</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="44" align="left">
+                                            <div align="right">RVR:&nbsp;</div>
+                                        </td>
+                                        <td height="44" colspan="2" align="left">
+                                            <input name="light_rvr_writein" type="text" title="Light/ Visibility - RVR" id="light_rvr_writein" tabindex="65" size="10" maxlength="20" />
+                                            <span class="tips">feet</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="146" align="center" valign="top">
+                                <table width="129" height="90" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td width="129" height="38" align="left" valign="middle">
+                                            <label for="atcadvisory_ddlb"> <select name="atcadvisory_ddlb" id="atcadvisory_ddlb" tabindex="66"> <option>( Select ATC )</option> <option>Ramp</option> <option>Ground</option> <option>Tower</option> <option>TRACON</option> <option>Center</option> <option>FSS</option> <option>UNICOM</option> <option>CTAF</option> </select> </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="55" align="left" valign="bottom">
+                                            <label for="atcadvisory_facility_writein">&nbsp;ATC Facility Name: <input name="atcadvisory_facility_writein" type="text" id="atcadvisory_facility_writein" tabindex="67" size="16" maxlength="50" /> </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="302" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td width="302" class="category">aircraft 1 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="338">
+                    <table width="687" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" role="presentation">
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Your Aircraft Type</strong>
+                            </td>
+                            <td height="30" colspan="3" valign="bottom">
+                                &nbsp;
+                                <input name="acft1_makemodel_writein" type="text" title="Aircraft Type - Make / Model" id="acft1_makemodel_writein" tabindex="68" size="35" maxlength="50" />
+                                <span class="tips">(Make / Model, e.g. B737, NOT N #, Flt #, etc) </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="5" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="135" height="30" valign="bottom">
+                                <strong>&nbsp;Operator FAR Part </strong>
+                            </td>
+                            <td width="196" height="30" align="left" valign="bottom">
+                                <label for="acft1_farpart_ddlb"> &nbsp; <select name="acft1_farpart_ddlb" id="acft1_farpart_ddlb" tabindex="69"> <option>( Select FAR Part )</option> <option>91</option> <option>103</option> <option>119</option> <option>121</option> <option>125</option> <option>129</option> <option>135</option> <option>137</option> </select> </label>
+                            </td>
+                            <td width="356" height="30" valign="bottom">
+                                <label for="acft1_farpart_writein"> Other:&nbsp; <input name="acft1_farpart_writein" type="text" id="acft1_farpart_writein" tabindex="70" size="20" maxlength="3" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="5" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Operator</strong>
+                            </td>
+                            <td height="30" align="left" valign="bottom">
+                                <label for="acft1_oper_ddlb"> &nbsp; <select name="acft1_oper_ddlb" id="acft1_oper_ddlb" tabindex="71"> <option>( Select Operator )</option> <option>Air Carrier</option> <option>Air Taxi</option> <option>Corporate</option> <option>Fractional</option> <option>FBO</option> <option>Government</option> <option>Military</option> <option>Personal</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft1_oper_other_writein">Other:&nbsp; <input name="acft1_oper_other_writein" type="text" id="acft1_oper_other_writein" tabindex="72" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" width="10" height="10" alt="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Mission</strong>
+                            </td>
+                            <td height="30" align="left" valign="bottom">
+                                &nbsp;
+                                <label for="acft1_mission_ddlb"> <select name="acft1_mission_ddlb" id="acft1_mission_ddlb" tabindex="73"> <option>( Select Mission )</option> <option>Passenger</option> <option>Personal</option> <option>Cargo/Freight</option> <option>Training</option> <option>Ferry</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft1_mission_other_writein">Other:&nbsp; <input name="acft1_mission_other_writein" type="text" id="acft1_mission_other_writein" tabindex="74" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" valign="top" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Flight Plan </strong>
+                            </td>
+                            <td height="30" colspan="2" valign="bottom">
+                                &nbsp;
+                                <label for="acft1_plan_ddlb"> <select name="acft1_plan_ddlb" id="acft1_plan_ddlb" tabindex="75"> <option>( Select Flight Plan )</option> <option>VFR</option> <option>IFR</option> <option>SVFR</option> <option>DVFR</option> <option>None</option> </select> </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" valign="top" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Flight Phase </strong>
+                            </td>
+                            <td height="30" valign="bottom">
+                                &nbsp;
+                                <label for="acft1_phases_ddlb"> <select name="acft1_phases_ddlb" id="acft1_phases_ddlb" tabindex="76"> <option>( Select Flight Phase )</option> <option>Taxi</option> <option>Parked</option> <option>Takeoff</option> <option>Initial Climb</option> <option>Climb</option> <option>Cruise</option> <option>Descent</option> <option>Initial Approach</option> <option>Final Approach</option> <option>Missed/GAR</option> <option>Landing</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft1_phases_other_writein">Other:&nbsp; <input name="acft1_phases_other_writein" type="text" id="acft1_phases_other_writein" tabindex="77" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="middle">
+                                <strong>&nbsp;Route in Use </strong>
+                            </td>
+                            <td colspan="3" rowspan="2" align="left" valign="top">
+                                <table width="542" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                    <tr>
+                                        <td width="83" height="27" valign="bottom">
+                                            <label for="acft1_route_direct_cbx"><input name="acft1_route_direct_cbx" type="checkbox" id="acft1_route_direct_cbx" tabindex="78" value="Y" />Direct </label>
+                                            <br />
+                                        </td>
+                                        <td width="242" valign="bottom">
+                                            <label for="acft1_route_visualapch_cbx"><input name="acft1_route_visualapch_cbx" type="checkbox" id="acft1_route_visualapch_cbx" tabindex="81" value="Y" />Visual Approach</label>
+                                        </td>
+                                        <td width="96" valign="bottom">
+                                            <label for="acft1_route_airway_cbx"><input name="acft1_route_airway_cbx" type="checkbox" id="acft1_route_airway_cbx" tabindex="85" value="Y" />Airway (ID):</label>
+                                        </td>
+                                        <td width="121" valign="bottom">
+                                            <input name="acft1_route_airway_writein" type="text" title="Aircraft 1 Route in Use - Airway" id="acft1_route_airway_writein" tabindex="86" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25">
+                                            <label for="acft1_route_oceanic_cbx"><input name="acft1_route_oceanic_cbx" type="checkbox" id="acft1_route_oceanic_cbx" tabindex="79" value="Y" />Oceanic</label>
+                                        </td>
+                                        <td>
+                                            <label for="acft1_route_none_cbx"><input name="acft1_route_none_cbx" type="checkbox" id="acft1_route_none_cbx" tabindex="82" value="Y" />None </label>
+                                        </td>
+                                        <td>
+                                            <label for="acft1_route_star_cbx"><input name="acft1_route_star_cbx" type="checkbox" id="acft1_route_star_cbx" tabindex="87" value="Y" />STAR (ID):</label>
+                                        </td>
+                                        <td>
+                                            <input name="acft1_route_star_writein" type="text" title="Aircraft 1 Route in Use - STAR (ID)" id="acft1_route_star_writein" tabindex="88" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="acft1_route_vectors_cbx"><input name="acft1_route_vectors_cbx" type="checkbox" id="acft1_route_vectors_cbx" tabindex="80" value="Y" />Vectors</label>
+                                        </td>
+                                        <td>
+                                            <label for="acft1_route_other_cbx"><input name="acft1_route_other_cbx" type="checkbox" id="acft1_route_other_cbx" tabindex="83" value="Y" />Other: </label>
+                                            <input name="acft1_route_other_writein" type="text" title="Aircraft 1 Route In Use - Other" id="acft1_route_other_writein" tabindex="84" size="19" maxlength="25" />
+                                        </td>
+                                        <td>
+                                            <label for="acft1_route_sid_cbx"><input name="acft1_route_sid_cbx" type="checkbox" id="acft1_route_sid_cbx" tabindex="89" value="Y" />SID (ID):</label>
+                                        </td>
+                                        <td>
+                                            <input name="acft1_route_sid_writein" type="text" title="Aircraft 1 Route in Use - SID (ID)" id="acft1_route_sid_writein" tabindex="90" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="bottom">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td height="9" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="8" height="8" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="675" height="48" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td height="48" colspan="2" align="right" class="tipsheader">iF MORE THAN one AIRCRAFT Was INVOLVED, PLEASE ADD AN ADDITIONAL AIRCRAFT. </td>
+                            <td width="203" height="48" align="left">
+                                <table width="140" height="25" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td>
+                                            <input type="button" value="Add Aircraft" name="AddAircraft" class="buttonGrey" onClick="document.getElementById('acft2_table').style.display='block';document.getElementById('acft2_table0').style.display='block'">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="302" border="0" cellspacing="0" cellpadding="0" id="acft2_table0" style="display:none" role="presentation">
+                        <tr>
+                            <td width="302" class="category">aircraft 2 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="687" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" id="acft2_table" style="display:none" role="presentation">
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>Other Aircraft Type</strong>
+                            </td>
+                            <td height="30" colspan="3" valign="bottom">
+                                &nbsp;
+                                <input id="acft2_makemodel_writein" name="acft2_makemodel_writein" type="text" title="Aircraft 2 Type - Make/Model" size="35" maxlength="50" />
+                                <span class="tips">(Make / Model, e.g. B737, NOT N #, Flt #, etc) </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="5" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="135" height="30" valign="bottom">
+                                <strong>&nbsp;Operator FAR Part </strong>
+                            </td>
+                            <td width="196" height="30" align="left" valign="bottom">
+                                <label> &nbsp; <select id="acft2_farpart_ddlb" name="acft2_farpart_ddlb"> <option>( Select FAR Part )</option> <option>91</option> <option>103</option> <option>119</option> <option>121</option> <option>125</option> <option>129</option> <option>135</option> <option>137</option> </select> </label>
+                            </td>
+                            <td width="356" height="30" valign="bottom">
+                                <label for="acft2_farpart_writein"> Other:&nbsp; <input id="acft2_farpart_writein" name="acft2_farpart_writein" type="text" size="20" maxlength="3" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="5" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Operator</strong>
+                            </td>
+                            <td height="30" align="left" valign="bottom">
+                                <label> &nbsp; <select id="acft2_oper_ddlb" name="acft2_oper_ddlb"> <option>( Select Operator )</option> <option>Air Carrier</option> <option>Air Taxi</option> <option>Corporate</option> <option>Fractional</option> <option>FBO</option> <option>Government</option> <option>Military</option> <option>Personal</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft2_oper_other_writein">Other:&nbsp; <input id="acft2_oper_other_writein" name="acft2_oper_other_writein" type="text" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Mission</strong>
+                            </td>
+                            <td height="30" align="left" valign="bottom">
+                                <label for="acft2_mission_ddlb">&nbsp; <select id="acft2_mission_ddlb" name="acft2_mission_ddlb"> <option>( Select Mission )</option> <option>Passenger</option> <option>Personal</option> <option>Cargo/Freight</option> <option>Training</option> <option>Ferry</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft2_mission_other_writein">Other:&nbsp; <input id="acft2_mission_other_writein" name="acft2_mission_other_writein" type="text" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" valign="top" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Flight Plan </strong>
+                            </td>
+                            <td height="30" colspan="2" valign="bottom">
+                                <label for="acft2_plan_ddlb">&nbsp; <select id="acft2_plan_ddlb" name="acft2_plan_ddlb"> <option>( Select Flight Plan )</option> <option>VFR</option> <option>IFR</option> <option>SVFR</option> <option>DVFR</option> <option>None</option> </select> </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" valign="top" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" valign="bottom">
+                                <strong>&nbsp;Flight Phase </strong>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft2_phases_ddlb">&nbsp; <select id="acft2_phases_ddlb" name="acft2_phases_ddlb"> <option>( Select Flight Phase )</option> <option>Taxi</option> <option>Parked</option> <option>Takeoff</option> <option>Initial Climb</option> <option>Climb</option> <option>Cruise</option> <option>Descent</option> <option>Initial Approach</option> <option>Final Approach</option> <option>Missed/GAR</option> <option>Landing</option> </select> </label>
+                            </td>
+                            <td height="30" valign="bottom">
+                                <label for="acft2_phases_other_writein">Other:&nbsp; <input id="acft2_phases_other_writein" name="acft2_phases_other_writein" type="text" size="20" maxlength="25" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="11" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="10" height="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="middle">
+                                <strong>&nbsp;Route in Use </strong>
+                            </td>
+                            <td colspan="3" rowspan="2" align="left" valign="top">
+                                <table width="542" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                    <tr>
+                                        <td width="96" height="27" valign="bottom">
+                                            <label for="acft2_route_direct_cbx"> <input type="checkbox" id="acft2_route_direct_cbx" name="acft2_route_direct_cbx" value="Y" /> Direct </label>
+                                            <br />
+                                        </td>
+                                        <td width="229" valign="bottom">
+                                            <label for="acft2_route_visualapch_cbx"> <input type="checkbox" id="acft2_route_visualapch_cbx" name="acft2_route_visualapch_cbx" value="Y" /> Visual Approach</label>
+                                        </td>
+                                        <td width="96" valign="bottom">
+                                            <label for="acft2_route_airway_cbx"> <input type="checkbox" id="acft2_route_airway_cbx" name="acft2_route_airway_cbx" value="Y" /> Airway (ID):</label>
+                                        </td>
+                                        <td width="121" valign="bottom">
+                                            <input id="acft2_route_airway_writein" name="acft2_route_airway_writein" type="text" title="Aircraft 2 Route in Use - Airway" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25">
+                                            <label for="acft2_route_oceanic_cbx"> <input type="checkbox" id="acft2_route_oceanic_cbx" name="acft2_route_oceanic_cbx" value="Y" /> Oceanic</label>
+                                        </td>
+                                        <td>
+                                            <label for="acft2_route_none_cbx"> <input type="checkbox" id="acft2_route_none_cbx" name="acft2_route_none_cbx" value="Y" /> None </label>
+                                        </td>
+                                        <td>
+                                            <label for="acft2_route_star_cbx"> <input type="checkbox" id="acft2_route_star_cbx" name="acft2_route_star_cbx" value="Y" /> STAR (ID):</label>
+                                        </td>
+                                        <td>
+                                            <input id="acft2_route_star_writein" name="acft2_route_star_writein" type="text" title="Aircraft 2 Route in Use - STAR (ID)" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="acft2_route_vectors_cbx"> <input type="checkbox" id="acft2_route_vectors_cbx" name="acft2_route_vectors_cbx" value="Y" /> Vectors</label>
+                                        </td>
+                                        <td>
+                                            <label for="acft2_route_other_cbx"> <input type="checkbox" id="acft2_route_other_cbx" name="acft2_route_other_cbx" value="Y" /> Other: </label>
+                                            <input id="acft2_route_other_writein" name="acft2_route_other_writein" type="text" title="Aircraft 2 Route in Use - Other" size="19" maxlength="25" />
+                                        </td>
+                                        <td>
+                                            <label for="acft2_route_sid_cbx"> <input type="checkbox" id="acft2_route_sid_cbx" name="acft2_route_sid_cbx" value="Y" /> SID (ID):</label>
+                                        </td>
+                                        <td>
+                                            <input id="acft2_route_sid_writein" name="acft2_route_sid_writein" type="text" title="Aircraft 2 Route in Use - SID (ID)" size="13" maxlength="15" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="bottom">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td height="9" colspan="4" class="horizontal">
+                                <img src="images/spacer.gif" alt="" width="8" height="8" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="697" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td width="182" height="15" class="categoryRight">Location&nbsp;&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="186">
+                    <table width="697" height="173" border="0" align="center" cellpadding="0" cellspacing="0" class="buttonlabel" role="presentation">
+                        <tr>
+                            <td width="364" class="divider">
+                                <table width="361" height="182" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="37" colspan="3" align="left" class="horizontal">
+                                            <label for="location_altitude_writein">&nbsp;&nbsp;&nbsp;Altitude: <input name="location_altitude_writein" type="text" id="location_altitude_writein" tabindex="91" size="5" maxlength="25" /></label>
+                                            <span class="tips">(single value)</span>
+                                        </td>
+                                        <td width="143" align="left" class="horizontal">
+                                            <label for="location_altitude_msl_rb"> <input name="location_altitude_rb" type="radio" id="location_altitude_msl_rb" tabindex="92" value="MSL" /> MSL &nbsp;</label>
+                                            <label for="location_altitude_agl_rb"><input name="location_altitude_rb" type="radio" id="location_altitude_agl_rb" tabindex="93" value="AGL" />AGL</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="37" colspan="4" align="left" valign="middle">
+                                            <span style="line-height:34px;"><label for="location_distance_writein">&nbsp;&nbsp;&nbsp;Distance: <input name="location_distance_writein" type="text" id="location_distance_writein" tabindex="94" size="5" maxlength="25" /> <span class="tips"> &nbsp;and/or</span></label> <label for="location_radial_writein"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radial: <span class="tips">(bearing)</span> <input name="location_radial_writein" type="text" id="location_radial_writein" tabindex="95" size="5" maxlength="15" /> <span class="tips">from:</span> </label></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="181" height="54" align="left">
+                                            <label for="location_airport_rbg"> <input name="location" type="radio" id="location_airport_rbg" tabindex="96" value="Airport" /> Airport</label>
+                                            <br>
+                                            <input name="location_airport_writein" type="text" title="Location - Airport" id="location_airport_writein" tabindex="97" size="15" maxlength="25" style="margin-left:20px;" />
+                                        </td>
+                                        <td height="54" colspan="3" align="left">
+                                            <label for="location_atcfac_rbg"> <input name="location" type="radio" id="location_atcfac_rbg" tabindex="100" value="ATC Fac" /> ATC Fac</label>
+                                            <br>
+                                            <input name="location_atcfac_writein" type="text" title="Location ATC Facility" id="location_atcfac_writein" tabindex="101" size="15" maxlength="25" style="margin-left:20px;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="54" align="left">
+                                            <label for="location_intersection_rbg"><input name="location" type="radio" id="location_intersection_rbg" tabindex="98" value="Intersection" />Intersection<br> </label>
+                                            <input name="location_intersection_writein" type="text" title="Location - Intersection" id="location_intersection_writein" tabindex="99" size="15" maxlength="10" style="margin-left:20px;" />
+                                        </td>
+                                        <td colspan="3" align="left">
+                                            <label for="location_navaid_rbg"> <input name="location" type="radio" id="location_navaid_rbg" tabindex="102" value="NAVAID" /> NAVAID&nbsp;&nbsp;<br> </label>
+                                            <input name="location_navaid_writein" type="text" title="Location NAVAID" id="location_navaid_writein" tabindex="103" size="15" maxlength="10" style="margin-left:20px;" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="333" valign="top">
+                                <table width="317" height="135" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                        <td height="25" colspan="4">Estimated miss distance in feet:</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="14" height="33" valign="top">&nbsp;</td>
+                                        <td width="154" valign="top">
+                                            <label for="conflicts_horiz_writein"><span class="tips">Horizontal</span> <input name="conflicts_horiz_writein" type="text" id="conflicts_horiz_writein" tabindex="104" size="8" maxlength="7" /></label>
+                                        </td>
+                                        <td height="33" colspan="2" valign="top">
+                                            <label for="conflicts_vert_writein"><span class="tips">Vertical</span> <input name="conflicts_vert_writein" type="text" id="conflicts_vert_writein" tabindex="105" size="8" maxlength="7" /></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" colspan="3">Was evasive action taken?</td>
+                                        <td width="95" height="30">
+                                            <label for="conflicts_evasive_yes_rb"> <input name="conflicts_evasive_rb" type="radio" id="conflicts_evasive_yes_rb" tabindex="106" value="Y" />Yes</label>
+                                            <label for="conflicts_evasive_no_rb">&nbsp; <input name="conflicts_evasive_rb" type="radio" id="conflicts_evasive_no_rb" tabindex="107" value="N" /> No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" colspan="2">Was TCAS a factor?</td>
+                                        <td width="54" height="30">
+                                            <label for="conflicts_tcas_ta_rb"><input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_ta_rb" tabindex="108" value="Aircraft TA" /> TA </label>
+                                        </td>
+                                        <td height="30">
+                                            <label for="conflicts_tcas_ra_rb"> <input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_ra_rb" tabindex="109" value="Aircraft RA" /> RA </label>
+                                            <label for="conflicts_tcas_no_rb">&nbsp;&nbsp; <input name="conflicts_tcas_rb" type="radio" id="conflicts_tcas_no_rb" tabindex="110" value="N" /> No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" colspan="3"> Did terrain warning system activate?</td>
+                                        <td height="30">
+                                            <label for="conflicts_terrainwarning_yes_rb"> <input name="conflicts_terrainwarning_rb" type="radio" id="conflicts_terrainwarning_yes_rb" tabindex="111" value="Y" />Yes</label>
+                                            <label for="conflicts_terrainwarning_no_rb">&nbsp; <input name="conflicts_terrainwarning_rb" type="radio" id="conflicts_terrainwarning_no_rb" tabindex="112" value="N" /> No</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="categoryBox">
+                    <table width="302" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td width="302" class="category">Describe event/situation </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="675" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                            <td colspan="6" class="tips">
+                                Keeping in mind the topics shown below, discuss those which you feel are relevant and anything else you think is important. Include what you believe really caused the problem, and what can be done to prevent a recurrence, or correct the situation.
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="tips">
+                                <br />
+<textarea name="narrative1" cols="93" rows="20" class="narrative" title="Narrative - Describe Event / Situation" id="narrative1" tabindex="113" maxlength="16000"></textarea>
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="tipsheader">chain of events </td>
+                            <td width="7" class="divider">&nbsp;</td>
+                            <td width="7">&nbsp;</td>
+                            <td colspan="2" class="tipsheader">human performance considerations </td>
+                        </tr>
+                        <tr>
+                            <td width="165" class="tips">
+                                - How the problem arose
+                                <br /> - Contributing factors
+                            </td>
+                            <td width="165" class="tips">
+                                - How it was discovered
+                                <br /> - Corrective actions
+                            </td>
+                            <td width="7" class="divider">&nbsp;</td>
+                            <td width="7">&nbsp;</td>
+                            <td width="232" class="tips">
+                                - Perceptions, judgements, decisions
+                                <br /> - Factors affecting the quality of human performance
+                            </td>
+                            <td width="99" valign="top" class="tips">
+                                - Actions or inactions
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="tips">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="16" colspan="5" align="right" valign="top" class="tips">
+                                <table width="346" border="0" align="left" cellpadding="0" cellspacing="0" class="entryCaveat" role="presentation">
+                                    <tr>
+                                        <td align="center">
+                                            <strong>GENERAL FORM</strong>
+                                            <br>
+                                            <span class="tips"></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td align="center" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <tr>
+                            <td>
+                                <table width="700" height="62" border="0" cellpadding="3" cellspacing="5" role="presentation"> </table>
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="5" align="center" valign="top" bgcolor="#FFFFFF">
+                                <img src="images/spacer.gif" alt="" width="5" height="5" />
+                            </td>
+                        </tr>
+                        <tr valign="middle" bgcolor="#E3E4E6" class="footerBackdrop">
+                            <td valign="top" class="entryCaveat">
+                                <table width="100%" border="0" cellspacing="3" cellpadding="10" role="presentation">
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <strong>You can save this page as a PDF by using your browser's print page functionality (most browser's have a shortcut CTRL+P). See the <a href="https://discord.com/channels/247780029449240576/249587091321782282/1086854258411978793">PilotEdge Discord thread here</a>.</strong>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="5" align="center" valign="top" bgcolor="#FFFFFF">
+                                <img src="images/spacer.gif" alt="" width="5" height="5" />
+                            </td>
+                        </tr>
+                    </table>
+    </form>
+</body>
+</html>
